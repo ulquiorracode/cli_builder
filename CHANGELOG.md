@@ -121,3 +121,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial test suite 
 # Version 0.2.0
 # Version 0.3.0
+# Version 0.3.1
