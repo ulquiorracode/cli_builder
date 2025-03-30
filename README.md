@@ -70,6 +70,17 @@ pip install -e ".[dev]"
 pytest
 ```
 
+## TODO
+
+Future plans for the CLI Builder project:
+
+* Add interactive elements (menus, progress bars, find fields, etc.)
+* Create Docker integration for containerized CLI apps
+* Implement plugin system for extending functionality
+* Add support for configuration files (.ini, .yaml, etc.)
+* Improve error messages and debugging capabilities
+* Implement localization
+
 ## License
 
-This project is licensed under the GPL-3.0 License - see the LICENSE file for details. 
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
