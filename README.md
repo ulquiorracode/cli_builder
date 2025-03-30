@@ -74,6 +74,7 @@ pytest
 
 Future plans for the CLI Builder project:
 
+* Add support for Fluent API
 * Add interactive elements (menus, progress bars, find fields, etc.)
 * Create Docker integration for containerized CLI apps
 * Implement plugin system for extending functionality
