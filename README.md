@@ -11,7 +11,6 @@ A modern, type-safe CLI framework for Python applications.
 * Flexible argument and option handling
 * Built-in error handling
 * Comprehensive test coverage
-* Multiple language support
 
 ## Documentation
 
