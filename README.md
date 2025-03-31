@@ -16,8 +16,8 @@ A modern, type-safe CLI framework for Python applications.
 
 Full documentation is available in multiple languages:
 
-* English
-* Русский
+* [English](docs/en/readme.md)
+* [Русский](docs/ru/readme.md)
 
 ## Quick Start
 
@@ -46,7 +46,7 @@ pip install cli-builder
 
 ## Examples
 
-See the examples directory for usage examples.
+See the [examples](examples/) directory for usage examples.
 
 ## Development
 
@@ -69,7 +69,7 @@ pip install -e ".[dev]"
 pytest
 ```
 
-## TODO
+## Roadmap
 
 Future plans for the CLI Builder project:
 
@@ -80,6 +80,8 @@ Future plans for the CLI Builder project:
 * Add support for configuration files (.ini, .yaml, etc.)
 * Improve error messages and debugging capabilities
 * Implement localization
+
+See [TODO list](docs/en/todo.md) for more details.
 
 ## License
 
