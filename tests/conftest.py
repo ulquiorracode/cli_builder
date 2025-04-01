@@ -1,6 +1,7 @@
 """Common test fixtures."""
 
 import pytest
+
 from cli_builder import CLI
 
 

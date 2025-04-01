@@ -2,6 +2,7 @@
 """Basic CLI example demonstrating core features."""
 
 import sys
+
 from cli_builder import CLI
 
 

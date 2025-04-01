@@ -1,6 +1,7 @@
 """Tests for CLI examples."""
 
 import pytest
+
 from cli_builder import CLI
 from examples.basic_cli import main
 

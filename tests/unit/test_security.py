@@ -1,6 +1,7 @@
 """Tests for security features."""
 
 import pytest
+
 from cli_builder.command import Command
 
 

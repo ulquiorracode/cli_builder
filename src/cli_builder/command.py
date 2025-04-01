@@ -1,6 +1,7 @@
 """Command implementation."""
 
 from typing import Any, Callable, Dict, List
+
 import attrs
 
 

@@ -1,6 +1,7 @@
 """Tests for constants implementation."""
 
 import pytest
+
 from cli_builder import CLI, CLIConstants, Constant
 from cli_builder.constants import ConstantMeta
 

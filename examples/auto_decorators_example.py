@@ -6,6 +6,7 @@ and auto_command decorators to create CLI commands with minimal code.
 """
 
 import sys
+
 from cli_builder import CLI
 
 
