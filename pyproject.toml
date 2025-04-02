@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cli_builder"
+version = "0.2.0"
+authors = [
+    {name = "ulquiorracode", email = "bobrovskihegor6@yandex.ru"},
+]
+description = "A framework for building command-line interfaces"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+keywords = ["cli", "command-line", "framework"]
+dependencies = [
+    "attrs>=21.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.1.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+    "pytest>=7.2.1",
+    "pytest-cov>=4.0.0",
+    "mypy>=1.0.1",
+]
+docs = [
+    "mkdocs>=1.4.3",
+    "mkdocs-material>=9.1.3",
+    "mkdocstrings>=0.21.2",
+    "mkdocstrings-python>=1.1.2",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ulquiorracode/cli_builder"
+"Bug Tracker" = "https://github.com/ulquiorracode/cli_builder/issues"
+
+[tool.black]
+line-length = 100
+target-version = ["py38", "py39", "py310", "py311", "py312"]
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "--cov=cli_builder --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["cli_builder"]
+omit = ["tests/*", "examples/*"]

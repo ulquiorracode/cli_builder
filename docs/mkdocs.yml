@@ -1,0 +1,91 @@
+site_name: CLI Builder
+site_url: https://ulquiorracode.github.io/cli_builder/
+site_author: ulquiorracode
+site_description: "A framework for building command-line interfaces"
+
+repo_name: ulquiorracode/cli_builder
+repo_url: https://github.com/ulquiorracode/cli_builder
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - content.code.annotate
+    - search.highlight
+    - search.share
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - footnotes
+  - def_list
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            show_source: true
+            show_category_heading: true
+            heading_level: 3
+  - autorefs
+
+nav:
+  - Home: 'index.md'
+  - Getting Started:
+      - Installation: 'en/guides/installation.md'
+      - Quick Start: 'en/guides/quickstart.md'
+  - API Reference:
+      - Core API: 'en/api/core.md'
+      - Decorators: 'en/api/decorators.md'
+      - Events: 'en/api/events.md'
+  - Guides:
+      - Creating a CLI App: 'en/guides/creating-cli-app.md'
+      - Working with Modules: 'en/guides/working-with-modules.md'
+      - Using Libraries: 'en/guides/using-libraries.md'
+      - Event System: 'en/guides/events.md'
+  - Tutorials:
+      - Building a Todo App: 'en/tutorials/todo-app.md'
+  - Examples: 'en/examples.md'
+  - Русская документация:
+      - Основы: 'ru/guides/basics.md'
+      - API: 'ru/api/reference.md'
+      - Туториалы: 'ru/tutorials/index.md'
+  - Contributing: 'en/contributing.md'
+  - Changelog: 'en/changelog.md'
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ulquiorracode
+      name: ulquiorracode on GitHub 
