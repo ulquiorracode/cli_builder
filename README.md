@@ -1,4 +1,4 @@
-# CLI Builder
+# CLI Builder (deprecated, watch [rethink](https://github.com/ulquiorracode/cli_builder/edit/main) branch)
 
 A modern, type-safe CLI framework for Python applications.
 
